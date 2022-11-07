@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+#include <iostream>
+struct employee
+{
+	char name[64];
+	long employee_id;
+	float salary;
+	char phone[10];
+	int office_number;
+};
+void get_employee_id(employee*);
+void main(void)
+{
+	employee worker;
+	get_employee_id(&worker);
+	strcpy_s(worker.name, "Іванов"); // Копіювати ім’я в рядок
+	std::cout<< "Службовець: " << worker.name << std::endl;
+	std::cout << "Номер службовця: " << worker.employee_id << std::endl;
+	system("pause");
+}
+void get_employee_id(employee* worker)
+{
+	std::cout << " Введіть номер службовця: ";
+	std::cin>> worker->employee_id;
+}

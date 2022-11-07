@@ -1,0 +1,42 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+#include <iostream>
+using namespace std;
+struct Tbyte // структура бітових полів
+{
+	int b1 : 1;
+	int b2 : 1;
+	int b3 : 1;
+	int b4 : 1;
+	int b5 : 1;
+	int b6 : 1;
+	int b7 : 1;
+	int b8 : 1;
+};
+union Tbits
+{
+	char ch;
+	Tbyte cod;
+} u;
+void decode(Tbits x); // прототип функції декодування
+int main()
+{
+	do {
+		u.ch = getche();
+		printf(" :");
+		decode(u);
+	} while (u.ch != 'q');
+}
+void decode(Tbits u) // функція декодування
+{
+	if (u.cod.b8) printf("1"); else printf("0");
+	if (u.cod.b7) printf("1"); else printf("0");
+	if (u.cod.b6) printf("1"); else printf("0");
+	if (u.cod.b5) printf("1"); else printf("0");
+	if (u.cod.b4) printf("1"); else printf("0");
+	if (u.cod.b3) printf("1"); else printf("0");
+	if (u.cod.b2) printf("1"); else printf("0");
+	if (u.cod.b1) printf("1"); else printf("0");
+	printf("\n");
+}

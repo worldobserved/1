@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+using namespace std;
+
+void main()
+{
+	char s[30];
+	int x;
+	printf("\n Etner The String: ");
+	gets_s(s);
+	x = srtlen(s);
+	printf("\n Total characters in string: %d", x);
+}

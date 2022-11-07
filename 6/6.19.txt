@@ -1,0 +1,10 @@
+#include <stdio.h>
+#define PI 3.141593
+void main()
+{
+	float r, area;
+	printf("\nenter the r of circle: ");
+	scanf("%f", &r);
+	area = PI* r * r;
+	printf("\n r of circle= ", area);
+}

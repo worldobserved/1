@@ -1,0 +1,21 @@
+#include <stdio.h>
+using namespace std;
+
+void main()
+{
+	char str[30], ch;
+	int i, c = 0;
+	printf("\n Etner The String: ");
+	gets_s(str);
+	printf("\n Etner The Character: ");
+	scanf("%d", &ch);
+	while (str[i] != '\0')
+	{
+		if (str[i] == ch)
+		{
+			c++;
+		}
+		i++;
+	}
+	printf("\n %c nOccurs %d times", ch,c);
+}

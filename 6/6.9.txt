@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+using namespace std;
+
+void main()
+{
+	char s[30];
+	printf("\n Etner The String s: ");
+	gets_s(s);
+	strrev(s);
+	printf("\n reversed string s2: %s", s);
+}

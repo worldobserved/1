@@ -1,0 +1,29 @@
+#include <iostream> 
+#include <string> // для std::initializer_list 
+#include<vector> 
+int main()
+{
+    setlocale(LC_ALL, "");
+    std::cout << "Введiть час: ";
+    int hours, minutes;
+    char doubleDot;
+    std::cin >> hours >> doubleDot >> minutes;
+    float fullTime = hours + minutes * 0.01 / 0.6;
+    if (9 < (fullTime + 45 * 0.01 / 0.6) && (fullTime + 45 * 0.01 / 0.6) < 23)
+    {
+        std::cout << "Ми успiваємо прийти в супермаркет ";
+    }
+    else if ((8 < (fullTime + 20 * 0.01 / 0.6) && (fullTime + 20 * 0.01 / 0.6) < 14) || (16 < (fullTime + 20 * 0.01 / 0.6) && (fullTime + 20 * 0.01 / 0.6) < 20))
+    {
+        std::cout << "Ми успiваємо прийти в гастроном ";
+    }
+    else if ((7 < fullTime && fullTime < 13) || (15 < fullTime && fullTime < 19))
+    {
+        std::cout << "Ми успiваємо прийти до найближчого магазину ";
+    }
+    else
+    {
+        std::cout << "Залишаємося дома";
+    }
+    return 0;
+}

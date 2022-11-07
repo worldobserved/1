@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	struct teacher //викладач
+	{
+		char fio[40]; //прізвище
+		char posada[20]; //посада
+		float salary; //зарплатня
+	};
+	struct student //студент
+	{
+		char fio[40]; //прізвище
+		float bal; //середній бал
+		float stipend; //стипендія
+	};
+	struct subject //дисципліна
+	{
+		char name[30]; //назва дисципліни
+		teacher prepod; //викладач, що читає дисципліну
+		int num; //кількість студентів, що вивчають дисципліну
+		student stud[20];
+	};
+	subject predmet[10];
+}

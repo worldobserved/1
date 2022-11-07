@@ -1,0 +1,17 @@
+#include <stdio.h>
+float div(int, int); //Declaration
+void main()
+{
+	int a, b;
+	float d;
+	printf("\nEnter The Two numbers: ");
+	scanf("%d%d", &a, &b);
+	d = div(a, b);
+	printf("\nDivision : %f", d);
+}
+float div(int x, int y)
+{
+	float dv;
+	dv = (float)x / y;
+	return (dv);
+}

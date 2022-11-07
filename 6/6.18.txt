@@ -1,0 +1,16 @@
+#include <stdio.h>
+int x = 10;
+void demoreg();
+void main()
+{
+		int x = 10;;
+	printf("\nX=%d", x);
+	demoreg();
+	demoreg();
+}
+void demoreg()
+{
+	register int x = 10;
+	x = x + 2;
+	printf("\nX=%d", x);
+}

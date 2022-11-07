@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define F(X) 4*X*X+9*X*X
+void main()
+{
+	int x, y;
+	printf("\nenter x ");
+	scanf("%f", &x);
+	y = F(X);
+	printf("\nsolution %d  ", y);
+
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int value = 10;
+	int* ptr1 = &value;
+	int** ptr2 = &ptr1;
+	*ptr1 += 5; 
+	**ptr2 += 3;
+}

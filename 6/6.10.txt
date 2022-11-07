@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+using namespace std;
+
+void main()
+{
+	char s1[30], s2[30];
+	int cmp;
+	printf("\n Etner The String s1: ");
+	gets_s(s1);
+	printf("\n Etner The String s2: ");
+	gets_s(s2);
+	cmp = strcmp(s1, s2);
+	printf("\n reversed string s2: %s", cmp);
+}

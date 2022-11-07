@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+int fibo(int);
+void main()
+{
+	int x, i, c = 0;
+	printf("\n Etner The n turm of fibonacci series");
+	scanf("%d", &x);
+	printf("\nfibonatcci series");
+	for (i = 1; i <= x; i++)
+	{
+		printf("\n%d\t",fibo(c));
+		c++;
+	}
+}
+int fibo(int n)
+{
+	int f; 
+	if (n == 0)
+	{
+		return 0;
+	}
+	else if (n==1)
+	{
+		f = fibo(n - 1) + fibo(n - 2);
+	}
+}

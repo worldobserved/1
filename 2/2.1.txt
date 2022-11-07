@@ -1,0 +1,15 @@
+#include <iostream>
+#include <Windows.h>
+int main()
+{
+    SetConsoleOutputCP(1251);
+    int age;
+    std::cout << "Введiть рiк людини: ";
+    std::cin >> age;
+    std::cout << "Рiк людини становить " << age;
+    if ((age % 100) > 10 && (age % 100) < 21) std::cout << " рокiв.";
+    else if (age % 10 == 1) std::cout << " рiк";
+    else if (age % 10 == 2 || age % 10 == 3 || age % 10 == 4) std::cout << " роки";
+    else std::cout << " рокiв.";
+    std::cout << std::endl;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+void demoauto();
+void main()
+{
+	int x = 10;
+	printf("\n%X=%d", x);
+	demoauto();
+}
+		void demoauto();
+{
+	int x = 20;
+	printf("\n%X=%d", x);
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x = 0, * pi1 = &x, * pi2;
+	double y = 1.1, * pd = &y;
+	void* p;
+	p = pi1;
+	*pd = 2.718;
+	pi2 = (int*)p;
+	pd = (double*)p;
+	*pd = 2.718;
+	*pi1 = 8;
+}
